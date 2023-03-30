@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/menu-footer.css">
+    <link rel="stylesheet" href="./css/registro.css">
+
+    <script src="../controllers/jquery-3.6.3.js"></script>
+    <script src="../controllers/menu-footer.js"></script>
+    <script src="../controllers/registro.js"></script>
+
+    <!-- Menu-->  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> 
+    <!-- Footer--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+<body>
+    <header></header>
+    
+    <div id="container">
+        <h1>¿Eres una empresa o un voluntario?</h1>
+
+        <form id="usuario">
+            <p>
+                <label for="name">Empresa <span></span></label><br>
+                <input type="radio" id="empresa" name="type">
+            </p>
+            <p>
+                <label for="name">Voluntario <span></span></label><br>
+                <input type="radio" id="voluntario" name="type">
+            </p>
+        </form>
+
+        <form id="empresas" action="" method="post">
+            <p>
+                <label for="name">Name <span>(required, at least 3 characters)</span></label>
+                <input id="name" name="name" minlength="3" type="text" placeholder="Nombre" required>
+            </p>
+            <p>
+                <label for="description">Descripción <span>(required, at least 3 characters)</span></label>
+                <textarea id="description" placeholder="Descripción"></textarea>
+            </p>
+            <p>
+                <label for="ubication">Ubicacion<span>(required, at least 3 characters)</span></label>
+                <input id="ubication" name="ubication" minlength="3" type="text" placeholder="Ubicación" required>
+            </p>
+            <p>
+                <label for="mail">Email<span>(required, at least 3 characters)</span></label>
+                <input id="mail" name="mail" minlength="3" type="text" placeholder="Email" required>
+            </p>
+            <p>
+                <label for="phone">Teléfono<span>(required, at least 3 characters)</span></label>
+                <input id="phone" name="phone" minlength="3" type="text" placeholder="Teléfono" required>
+            </p>
+            <p>
+                <label for="image">Imagen<span>(required, at least 3 characters)</span></label>
+                <input id="image" name="image" minlength="3" type="file" placeholder="Imagen" required>
+            </p>
+        </form> 
+
+        <form id="voluntarios">
+            <p>
+                <label for="name">Name <span>(required, at least 3 characters)</span></label>
+                <input id="name" name="name" minlength="3" type="text" placeholder="Nombre" required>
+            </p>
+            <p>
+                <label for="appellidos">Apellidos <span>(required, at least 3 characters)</span></label>
+                <input id="appellidos" name="name" minlength="3" type="text" placeholder="Apellidos" required>
+            </p>
+            <p>
+                <label for="mail">Email<span>(required, at least 3 characters)</span></label>
+                <input id="mail" name="mail" minlength="3" type="text" placeholder="Email" required>
+            </p>
+            <p>
+                <label for="phone">Teléfono<span>(required, at least 3 characters)</span></label>
+                <input id="phone" name="phone" minlength="3" type="text" placeholder="Teléfono" required>
+            </p>
+            <p>
+                <label for="birth_date">Fecha nacimiento<span>(required, at least 3 characters)</span></label>
+                <input id="birth_date" name="birth_date" minlength="3" type="date" required>
+            </p>
+            <p>
+                <label for="birth_date">DNI<span>(required, at least 3 characters)</span></label>
+                <input id="birth_date" name="birth_date" minlength="3" type="text" placeholder="DNI" required>
+            </p>
+            <p>
+                <label for="birth_date">NIF<span>(required, at least 3 characters)</span></label>
+                <input id="birth_date" name="birth_date" minlength="3" type="text" placeholder="NIF" required>
+            </p>
+        </form>
+
+        <from id="aceptar">
+            <p>
+                <input type="checkbox" id="condiciones" name="condiciones">
+                <label>Aceptar las condiciones y términos.</label>
+            </p>
+            <p>
+                <input type="submit" id="btn_aceptar" name="aceptar" value="Aceptar">
+                <input type="submit" id="btn_limpiar" name="limpiar" value="Limpiar"> 
+            </p>
+        </from>
+    </div>
+
+    <footer></footer>
+</body>
+</html>
